@@ -85,7 +85,7 @@
     data(){
       return {
         params:{
-          page:2,//页码
+          page:1,//页码
           size:10,//每页显示个数
           siteId:''//站点id
         },
@@ -173,7 +173,7 @@
       this.params.siteId = this.$route.query.siteId||'';
     },
     mounted() {
-      //默认查询页面
+      //默认查询页面,DOM渲染完成就进行查询
       this.query()
       //初始化站点列表
       this.siteList = [
