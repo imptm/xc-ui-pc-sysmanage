@@ -40,6 +40,7 @@
               @click="edit(scope.row.pageId)">编辑
             </el-button>
           </template>
+
         </el-table-column>
         <el-table-column label="删除" width="80">
           <template slot-scope="scope">
