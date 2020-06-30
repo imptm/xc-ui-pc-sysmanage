@@ -34,6 +34,7 @@
         <el-table-column prop="pageCreateTime" label="创建时间" width="180" :formatter="formatCreatetime">
         </el-table-column>
         <el-table-column label="编辑" width="80">
+
           <template slot-scope="scope">
             <el-button
               size="small"type="primary"
@@ -78,7 +79,7 @@
   </div>
 </template>
 <script>
-  import * as cmsApi from '../api/cms'
+  import * as cmsApi from '../api/cm    s'
   import utilApi from '@/common/utils';
   export default{
     data(){
