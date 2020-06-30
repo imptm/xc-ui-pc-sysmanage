@@ -79,14 +79,14 @@
   </div>
 </template>
 <script>
-  import * as cmsApi from '../api/cm    s'
+  import * as cmsApi from '../api/cms'
   import utilApi from '@/common/utils';
   export default{
     data(){
       return {
         params:{
-          page:1,//页码
-          size:2,//每页显示个数
+          page:2,//页码
+          size:10,//每页显示个数
           siteId:''//站点id
         },
         listLoading:false,
