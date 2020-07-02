@@ -124,14 +124,24 @@
                     message: '提交成功',
                     type: 'success'
                   });
+                  // this.$router.push({
+                  //   path: '/cms/page/list', query: {
+                  //     page: this.$route.query.page,
+                  //     siteId:this.$route.query.siteId
+                  //   }
+                  // });
                   this.$refs['pageForm'].resetFields();
 
                 }else if(res.message){
+
                   this.addLoading = false;
                   this.$message.error(res.message);
+
                 }else{
+
                   this.addLoading = false;
                   this.$message.error('提交失败');
+
                 }
               });
             });
